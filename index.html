@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiMidias</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Lista de Conteúdos</h3>
+        <div id="videoList"></div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h2 id="contentTitle"></h2>
+            <div id="contentAuthor"></div>
+            <h1 id="videoTitle"></h1>
+            <p id="videoDescription"></p>
+        </div>
+        <video id="videoPlayer" controls>
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <div class="buttons">
+            <button id="next">Próximo</button>
+            <button id="article">Artigo</button>
+        </div>
+    </div>
+    <div id="modalArticle" class="modal">
+        <div class="modal-content">
+            <button class="close" id="closeArticle">Fechar</button>
+            <h2 id="articleTitle">Informações do Artigo</h2>
+            <p id="articleContent">Conteúdo do artigo...</p>
+        </div>
+    </div>
+    <div id="modalQuiz" class="modal">
+        <div class="modal-content">
+            <button class="close" id="closeQuiz">Fechar</button>
+            <h2>Quiz</h2>
+            <form id="quizForm"></form>
+            <div id="quizResult" style="display:none;">
+                <h3>Respostas</h3>
+                <div id="answers"></div>
+                <h3>Pontuação Atual: <span id="currentScore"></span></h3>
+                <h3>Pontuação Total: <span id="totalScore"></span></h3>
+                <button id="nextVideo">Próximo Vídeo</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
